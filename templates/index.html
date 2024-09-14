@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five-in-a-Row Game</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            background-color: #d3d3d3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Five-in-a-Row Game</h1>
+    
+    <h2>Who's Turn is it?</h2>
+    <p id="currentPlayer">BLACK</p>
+
+    <canvas id="gameBoard" width="570" height="570"></canvas>
+    <button id="resetButton">Reset Game</button>
+
+    <h2>Points</h2>
+    <table>
+    <tr>
+        <th>Team</th>
+        <th>Points</th>
+    </tr>
+    <tr>
+        <td>Black Team</td>
+        <td id="blackPoints">0</td>
+    </tr>
+    <tr>
+        <td>White Team</td>
+        <td id="whitePoints">0</td>
+    </tr>
+    </table>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
