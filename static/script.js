@@ -82,7 +82,7 @@ canvas.addEventListener('click', (e) => {
                 // Optionally: Disable further moves or reset the game
             } else {
                 currentPlayer = currentPlayer === 'black' ? 'white' : 'black';
-                document.getElementById('currentPlayer').textContent = currentPlayer.toUpperCase;
+                document.getElementById('currentPlayer').textContent = currentPlayer.toUpperCase();
             }
         } else {
             alert('Invalid move!');
